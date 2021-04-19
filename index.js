@@ -12,7 +12,7 @@ connectDB();
 
 app.use(express.json)
 app.use(morgan("dev"))
-app.use('/api/v6/captuer',captuerRoute)
+app.use('/api/v1/captuer',captuerRoute)
 app.get("/",(res, req)=>{
     res.send("<h1>Welcome <h1>");
 })
